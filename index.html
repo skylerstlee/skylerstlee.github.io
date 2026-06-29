@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Elena Voss · Researcher</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Press Start 2P for pixel/Minecraft feel; Share Tech Mono for body code-like text -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Pixel scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav class="nav">
+    <span class="nav-logo">[DR.V]</span>
+    <ul class="nav-links">
+      <li><a href="#about">&gt; about</a></li>
+      <li><a href="#research">&gt; research</a></li>
+      <li><a href="#publications">&gt; papers</a></li>
+      <li><a href="#contact">&gt; contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <header class="hero" id="top">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-avatar" aria-hidden="true">
+        <div class="pixel-avatar">
+          <!-- 16×16 pixel art face built in CSS/divs -->
+          <div class="pa-grid" id="pixelFace"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">// spawn point: academia</p>
+        <h1 class="hero-name">Dr. Elena<br/>Voss</h1>
+        <p class="hero-role">
+          <span class="blink">&#9646;</span>
+          <span id="typewriter"></span>
+        </p>
+        <div class="hero-stats">
+          <div class="stat-block">
+            <span class="stat-num">42</span>
+            <span class="stat-label">papers</span>
+          </div>
+          <div class="stat-divider">|</div>
+          <div class="stat-block">
+            <span class="stat-num">1.2k</span>
+            <span class="stat-label">citations</span>
+          </div>
+          <div class="stat-divider">|</div>
+          <div class="stat-block">
+            <span class="stat-num">8</span>
+            <span class="stat-label">years</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#research" class="btn btn-primary">[ explore research ]</a>
+          <a href="assets/cv.pdf" class="btn btn-ghost">[ download CV ]</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">▼ scroll to continue ▼</div>
+  </header>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="title-hash">#</span> about.txt</h2>
+      <div class="about-grid">
+        <div class="about-terminal">
+          <div class="terminal-bar">
+            <span class="tb-dot tb-red"></span>
+            <span class="tb-dot tb-yellow"></span>
+            <span class="tb-dot tb-green"></span>
+            <span class="tb-label">about.sh</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="output">Dr. Elena Voss, Ph.D. (MIT, 2018)</p>
+            <p class="blank"> </p>
+            <p><span class="prompt">$</span> cat affiliation.txt</p>
+            <p class="output">Associate Professor</p>
+            <p class="output">Dept. of Computational Biology</p>
+            <p class="output">University of New Geneva</p>
+            <p class="blank"> </p>
+            <p><span class="prompt">$</span> cat interests.txt</p>
+            <p class="output">- Protein structure prediction</p>
+            <p class="output">- ML in molecular biology</p>
+            <p class="output">- Graph neural networks</p>
+            <p class="output">- Open-source science</p>
+            <p class="blank"> </p>
+            <p><span class="prompt">$</span> <span class="cursor-blink">█</span></p>
+          </div>
+        </div>
+        <div class="about-bio">
+          <p>I use computational tools to understand how proteins fold, interact, and fail — because those failures are often where disease begins.</p>
+          <p>My lab sits at the intersection of graph neural networks, molecular dynamics, and a stubborn belief that science should be reproducible and open.</p>
+          <p>Before New Geneva, I spent two years at DeepMind's biology division, and before that: too many nights in an MIT wet lab, staring at blots that never cooperated.</p>
+          <div class="badge-row">
+            <span class="badge">MIT Ph.D.</span>
+            <span class="badge">NSF CAREER</span>
+            <span class="badge">Open Science</span>
+            <span class="badge">Python</span>
+            <span class="badge">PyTorch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESEARCH ─── -->
+  <section class="section section-dark" id="research">
+    <div class="container">
+      <h2 class="section-title"><span class="title-hash">#</span> research.log</h2>
+      <p class="section-sub">Three active quests. Each one a different kind of puzzle.</p>
+      <div class="research-grid">
+
+        <article class="research-card">
+          <div class="card-icon">⬡</div>
+          <h3 class="card-title">ProteinGraph GNN</h3>
+          <p class="card-body">Building graph neural networks that predict protein–protein interactions at scale, moving beyond sequence similarity to structural and chemical reasoning.</p>
+          <div class="card-meta">
+            <span class="tag">GNN</span>
+            <span class="tag">structural biology</span>
+          </div>
+          <div class="card-progress">
+            <div class="progress-label">progress</div>
+            <div class="pixel-bar"><div class="pixel-fill" style="--fill: 78%"></div></div>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <div class="card-icon">◈</div>
+          <h3 class="card-title">MD Sampling</h3>
+          <p class="card-body">Developing accelerated sampling techniques for molecular dynamics that reduce compute time by 40×, making microsecond-scale simulations tractable on single GPUs.</p>
+          <div class="card-meta">
+            <span class="tag">ML</span>
+            <span class="tag">molecular dynamics</span>
+          </div>
+          <div class="card-progress">
+            <div class="progress-label">progress</div>
+            <div class="pixel-bar"><div class="pixel-fill" style="--fill: 55%"></div></div>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <div class="card-icon">✦</div>
+          <h3 class="card-title">OpenFold Audit</h3>
+          <p class="card-body">A systematic reproducibility audit of public protein structure predictions, building tooling and benchmarks the community can trust and extend.</p>
+          <div class="card-meta">
+            <span class="tag">open science</span>
+            <span class="tag">benchmarks</span>
+          </div>
+          <div class="card-progress">
+            <div class="progress-label">progress</div>
+            <div class="pixel-bar"><div class="pixel-fill" style="--fill: 92%"></div></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PUBLICATIONS ─── -->
+  <section class="section" id="publications">
+    <div class="container">
+      <h2 class="section-title"><span class="title-hash">#</span> publications.bib</h2>
+      <p class="section-sub">Selected recent work. Full list on <a href="https://scholar.google.com" target="_blank" rel="noopener" class="inline-link">Google Scholar ↗</a></p>
+
+      <div class="pub-list">
+
+        <article class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h3 class="pub-title">Hierarchical Graph Transformers for Protein Complex Prediction</h3>
+            <p class="pub-authors">Voss E., Kim J., Okafor R., Lindström A.</p>
+            <p class="pub-venue">Nature Methods · IF 48.0</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[ PDF ]</a>
+              <a href="#" class="pub-link">[ code ]</a>
+              <a href="#" class="pub-link">[ data ]</a>
+            </div>
+          </div>
+          <div class="pub-badge pub-badge-hot">🔥 featured</div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h3 class="pub-title">Latent Space Diffusion for Accelerated Conformational Sampling</h3>
+            <p class="pub-authors">Voss E., Patel S.</p>
+            <p class="pub-venue">NeurIPS 2024 · Spotlight</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[ PDF ]</a>
+              <a href="#" class="pub-link">[ code ]</a>
+            </div>
+          </div>
+          <div class="pub-badge pub-badge-spotlight">★ spotlight</div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <h3 class="pub-title">Benchmarking Protein Structure Prediction Across AlphaFold Variants</h3>
+            <p class="pub-authors">Voss E., Nguyen T., Al-Hassan M., Kim J.</p>
+            <p class="pub-venue">PLOS Computational Biology</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[ PDF ]</a>
+              <a href="#" class="pub-link">[ code ]</a>
+              <a href="#" class="pub-link">[ data ]</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <h3 class="pub-title">Graph Contrastive Learning for Protein Function Annotation</h3>
+            <p class="pub-authors">Okafor R., Voss E.</p>
+            <p class="pub-venue">ICLR 2023</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[ PDF ]</a>
+              <a href="#" class="pub-link">[ poster ]</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section section-dark" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title"><span class="title-hash">#</span> contact.sh</h2>
+      <p class="section-sub">Open to collaborations, speaking invitations, and good questions.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-icon">✉</span>
+          <span class="contact-label">email</span>
+          <a href="mailto:e.voss@newgeneva.edu" class="contact-val">e.voss@newgeneva.edu</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-label">github</span>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-val">github.com/elenav</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">🔗</span>
+          <span class="contact-label">scholar</span>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener" class="contact-val">Google Scholar</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">𝕏</span>
+          <span class="contact-label">twitter / x</span>
+          <a href="https://x.com" target="_blank" rel="noopener" class="contact-val">@evoss_bio</a>
+        </div>
+      </div>
+
+      <div class="office-block">
+        <p class="office-label">// office hours</p>
+        <p class="office-val">Tuesdays 14:00–16:00 · Room 3.14, Bio-Computing Building</p>
+        <p class="office-val">Or by appointment — just email.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-left">© 2025 Elena Voss · Built with HTML + CSS + stubbornness</span>
+      <span class="footer-right"><a href="#top">[ back to top ↑ ]</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

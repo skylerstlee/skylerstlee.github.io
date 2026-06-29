@@ -1,0 +1,4 @@
+# GitHub Pages Configuration
+# This file tells GitHub Pages to serve the site from the root of this repo.
+# No special configuration needed for plain HTML/CSS/JS sites.
+# The site will be live at: https://<your-username>.github.io/<repo-name>/
