@@ -211,7 +211,7 @@ img { max-width: 100%; display: block; }
   color: var(--green);
   line-height: 1.5;
   margin-bottom: 16px;
-  text-shadow: 4px 4px 0 rgba(57,255,20,0.2), 0 0 20px rgba(57,255,20,0.4);
+  /*text-shadow: 4px 4px 0 rgba(57,255,20,0.2), 0 0 20px rgba(57,255,20,0.4);*/
 }
 
 .hero-role {
